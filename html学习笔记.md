@@ -334,7 +334,7 @@ caption可以为表格添加标题
 
 a标签可以实现超链接
 
-加入```target = "_blank"```可以实现在新标签页内打开
+加入`target = "_blank"`可以实现在新标签页内打开
 
 在href使用mailto可以链接email地址
 

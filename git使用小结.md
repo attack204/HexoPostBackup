@@ -43,7 +43,7 @@ git remote add origin 你的远程库地址
 
 远程仓库地址可以在这里获取
 
-![](http://wx2.sinaimg.cn/small/005S5cb6ly1fzb22pkhaxj30v508rmxx.jpg)
+![](http://wx3.sinaimg.cn/large/005S5cb6ly1fzb2mj413oj30xn084wf7.jpg)
 
 5、获取远程库与本地同步合并（如果远程库不为空必须做这一步，否则后面的提交会失败）
 
@@ -73,7 +73,9 @@ git push -u origin master
 
 ## 常用命令
 
-![命令查询](http://wx2.sinaimg.cn/small/005S5cb6ly1fzb245et6lj316i0u0wvw.jpg)
+<img src = "http://wx3.sinaimg.cn/large/005S5cb6ly1fzb2kz5yd9j316i0u0wvw.jpg" title = "命令查询"  height = "600" width = "800">
+
+
 
 ## 参考资料
 
