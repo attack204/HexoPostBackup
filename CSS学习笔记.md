@@ -90,6 +90,187 @@ body {background-image: url("images/back40.gif");}
 
 ## 样式
 
+### 背景
+
+#### 背景色
+
+可以使用`background-color`来设置背景色
+
+```css
+p {
+    background-color:blue;
+    padding:20px;
+    width: 400px;
+}
+```
+
+注意：
+
+background-color 不能继承
+
+#### 背景图像
+
+可以使用`background-image:`来设置背景图片
+
+```css
+p {
+    background-image:url("https://pic.cnblogs.com/avatar/1101696/20180214111459.png");
+    background-repeat: none;
+    padding:20px;
+    width: 400px;
+    height:800px;
+}
+```
+
+注意：
+
+不能继承
+
+
+#### 背景重复
+
+使用`background-repeat: repeat-x`可以设置背景图片重复，
+
+repeat-x 和 repeat-y 分别导致图像只在水平或垂直方向上重复，no-repeat 则不允许图像在任何方向上平铺。
+
+```css
+p {
+    background-image:url("https://pic.cnblogs.com/avatar/1101696/20180214111459.png");
+    background-repeat: repeat-x;
+    padding:20px;
+    width: 400px;
+    height:800px;
+}
+```
+
+#### 背景定位
+
+`background-position`可以来设置图像位置
+
+可以选用`center, top, bottom, left, right`
+
+```css
+body {
+    background-image: url("http://wx4.sinaimg.cn/large/005S5cb6ly1fzaxhur5nwj3050050jrw.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+```
+
+也可以直接用百分数值来定位
+
+下面的方式可以使元素放在水平方向 2/3、垂直方向 1/3 处
+
+```css
+body { 
+    background-image:url('http://wx4.sinaimg.cn/large/005S5cb6ly1fzaxhur5nwj3050050jrw.jpg');
+    background-repeat:no-repeat;
+    background-position:66% 33%;
+}
+```
+
+还可以设置长度
+
+```css
+body { 
+    background-image:url('http://wx4.sinaimg.cn/large/005S5cb6ly1fzaxhur5nwj3050050jrw.jpg');
+    background-repeat:no-repeat;
+    background-position:50px 100px;
+}
+```
+
+#### 背景关联
+
+可以使用`background-attachment`来固定图片
+
+```css
+body {
+  background-image:url(/i/eg_bg_02.gif);
+  background-repeat:no-repeat;
+  background-attachment:fixed
+}
+```
+
+### 文本
+
+#### 缩进文本
+
+可以使用`text-indent: 5em`来缩进文本
+
+可以使用负值来实现"悬挂缩进效果"，但是可能会超出浏览器边界，可以通过设置外边框和内边距来消除影响
+
+同样可以使用百分比值来缩进，百分数相对于缩进元素的父元素的宽度
+
+```css
+p {
+    text-indent: 5em;
+}
+```
+
+#### 水平对齐
+
+可以使用`text-align: `来实现文本对齐
+
+值 left、right 和 center 会导致元素中的文本分别左对齐、右对齐和居中。
+
+```css
+p {
+    text-align : center;
+}
+```
+
+#### 字符隔
+
+可以使用`word-spacing : 2em`来设置**单词**之间的标准间隔
+
+#### 字母间隔
+
+可以使用`letter-spacing: 2em`来设置字母之间的间隔
+
+#### 字符转换
+
+可以使用`text-transform`来设置大小写
+
+- none
+- uppercase
+- lowercase
+- capitalize
+
+默认值 none 对文本不做任何改动，将使用源文档中的原有大小写。顾名思义，uppercase 和 lowercase 将文本转换为全大写和全小写字符。最后，capitalize 只对每个单词的首字母大写。
+
+#### 文本装饰
+
+文本的`text-decoration`属性可以实现对文本的装饰
+
+不过好像主流浏览器都不支持`blink`了。。
+
+- none 去掉所有装饰
+- underline 增加下划线
+- overline 增加上划线？
+- line-through 增加横穿线
+- blink 使文本闪烁
+
+#### 处理空白符
+
+可以使用`white-space`
+
+![](http://photo.weibo.com/5379824760/photos/large/photo_id/4330519033737102/album_id/4043604963235610)
+
+
+### 字体
+
+#### 指定字体系列
+
+`font-family`可以自定义字体
+
+```css
+h1 {font-family: Georgia;}
+```
+
+#### 字体风格
+
+`font-style`
+
 ## 框模型
 
 ## 定位
